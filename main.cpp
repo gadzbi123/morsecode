@@ -11,8 +11,9 @@ string convertToMorse(string code){
     
     for(int i = 0;i<code.length();i++)
     {
-        int n=letters.find(code[i]);
-        words+=morses[n]+" ";
+        int n=letters.find(tolower(code[i]));
+        if(n!=string::npos)
+            words+=morses[n]+" ";
     }
     return words;
 
