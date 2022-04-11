@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-string convertToWords(string code){
+string convertToMorse(string code){
     string letters="abcdefghijklmnopqrstuvwxyz";
     string morses[]={".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", 
     "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", 
@@ -20,5 +20,5 @@ string convertToWords(string code){
 
 int main()
 {
-    cout<<convertToWords("This is morse code");
+    cout<<convertToMorse("This is morse code");
 }
